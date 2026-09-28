@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,300 +6,685 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mi Tabla | Quesos y Carnes Frías</title>
+    <title>Mi Tabla | Tablas de quesos y charcutería</title>
 
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
 
-    <!-- Navegación -->
+    <!-- =========================
+         NAVEGACIÓN
+    ========================== -->
 
     <header class="navbar">
 
-        <div class="logo">
-            Mi Tabla
-        </div>
+        <a href="#" class="logo">
+            MI TABLA
+        </a>
 
         <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#tablas">Tablas</a>
-            <a href="#personaliza">Personaliza</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="#personaliza">Arma tu tabla</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </nav>
+
+        <button class="carrito">
+            🛒
+        </button>
 
     </header>
 
 
-    <!-- Portada -->
+    <!-- =========================
+         HERO
+    ========================== -->
 
     <main>
 
-        <section id="inicio" class="hero">
+        <section class="hero" id="inicio">
 
             <div class="hero-contenido">
 
-                <p class="subtitulo">
-                    Quesos · Carnes frías · Frutas · Complementos
+                <p class="hero-etiqueta">
+                    QUESOS · CHARCUTERÍA · COMPLEMENTOS
                 </p>
 
                 <h1>
-                    Crea una tabla<br>
-                    a tu manera
+                    Una tabla hecha
+                    <span>para compartir.</span>
                 </h1>
 
-                <p>
-                    Elige tus ingredientes favoritos y disfruta
-                    una tabla hecha especialmente para ti.
+                <p class="hero-texto">
+                    Selecciona tus ingredientes favoritos y crea
+                    una tabla pensada para cada ocasión.
                 </p>
 
-                <button id="botonComenzar">
-                    Crear mi tabla
-                </button>
+                <a href="#personaliza" class="btn-principal">
+                    ARMA TU TABLA
+                </a>
 
+            </div>
+
+            <div class="hero-imagen">
+                <img src="img/hero.jpg" alt="Tabla de quesos y charcutería">
             </div>
 
         </section>
 
 
-        <!-- Tablas -->
+        <!-- =========================
+             INTRO
+        ========================== -->
 
-        <section id="tablas" class="seccion">
+        <section class="introduccion">
 
-            <h2>Nuestras tablas</h2>
-
-            <p class="descripcion">
-                Elige el tamaño que mejor se adapte a tu ocasión.
+            <p class="seccion-etiqueta">
+                NUESTRA SELECCIÓN
             </p>
 
-
-            <div class="tablas-container">
-
-                <article class="tabla-card">
-
-                    <div class="tabla-imagen">
-                        🧀
-                    </div>
-
-                    <h3>Pequeña</h3>
-
-                    <p>
-                        Ideal para 2 personas.
-                    </p>
-
-                    <strong>$350</strong>
-
-                </article>
-
-
-                <article class="tabla-card">
-
-                    <div class="tabla-imagen">
-                        🧀🥩
-                    </div>
-
-                    <h3>Mediana</h3>
-
-                    <p>
-                        Ideal para 4 personas.
-                    </p>
-
-                    <strong>$550</strong>
-
-                </article>
-
-
-                <article class="tabla-card">
-
-                    <div class="tabla-imagen">
-                        🧀🥩🍇
-                    </div>
-
-                    <h3>Grande</h3>
-
-                    <p>
-                        Ideal para 6 personas.
-                    </p>
-
-                    <strong>$750</strong>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Personalización -->
-<section id="personaliza" class="constructor">
-
-    <div class="constructor-header">
-
-        <p class="subtitulo">
-            Personaliza tu pedido
-        </p>
-
-        <h2>Arma tu tabla</h2>
-
-        <p>
-            Elige el tamaño y después agrega tus ingredientes favoritos.
-        </p>
-
-    </div>
-
-
-    <div class="constructor-contenido">
-
-
-        <!-- TAMAÑO -->
-
-        <div class="opciones">
-
-            <h3>1. Elige el tamaño</h3>
-
-            <div class="opciones-grid">
-
-                <button class="opcion-tabla" data-precio="350">
-                    <span>Pequeña</span>
-                    <small>2 personas</small>
-                    <strong>$350</strong>
-                </button>
-
-                <button class="opcion-tabla" data-precio="550">
-                    <span>Mediana</span>
-                    <small>4 personas</small>
-                    <strong>$550</strong>
-                </button>
-
-                <button class="opcion-tabla" data-precio="750">
-                    <span>Grande</span>
-                    <small>6 personas</small>
-                    <strong>$750</strong>
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- QUESOS -->
-
-        <div class="opciones">
-
-            <h3>2. Elige tus quesos</h3>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="100">
-                <span>Manchego</span>
-                <strong>+$100</strong>
-            </label>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="120">
-                <span>Brie</span>
-                <strong>+$120</strong>
-            </label>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="110">
-                <span>Gouda</span>
-                <strong>+$110</strong>
-            </label>
-
-        </div>
-
-
-        <!-- JAMONES -->
-
-        <div class="opciones">
-
-            <h3>3. Elige tus carnes frías</h3>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="150">
-                <span>Jamón serrano</span>
-                <strong>+$150</strong>
-            </label>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="130">
-                <span>Prosciutto</span>
-                <strong>+$130</strong>
-            </label>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="100">
-                <span>Salami</span>
-                <strong>+$100</strong>
-            </label>
-
-        </div>
-
-
-        <!-- EXTRAS -->
-
-        <div class="opciones">
-
-            <h3>4. Agrega extras</h3>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="35">
-                <span>Mermelada de higo</span>
-                <strong>+$35</strong>
-            </label>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="30">
-                <span>Nueces</span>
-                <strong>+$30</strong>
-            </label>
-
-            <label class="checkbox-opcion">
-                <input type="checkbox" value="40">
-                <span>Fresas</span>
-                <strong>+$40</strong>
-            </label>
-
-        </div>
-
-
-        <!-- RESUMEN -->
-
-        <div class="resumen">
-
-            <h3>Tu tabla</h3>
+            <h2>
+                Elige cómo quieres compartir
+            </h2>
 
             <p>
-                Total:
+                Tablas preparadas con quesos, carnes frías,
+                frutas y complementos seleccionados para
+                crear una experiencia especial.
             </p>
 
-            <div id="total">
-                $0
+        </section>
+
+
+        <!-- =========================
+             TABLAS
+        ========================== -->
+
+        <section class="catalogo" id="tablas">
+
+            <div class="seccion-header">
+
+                <div>
+                    <p class="seccion-etiqueta">
+                        TABLAS
+                    </p>
+
+                    <h2>
+                        Nuestras tablas
+                    </h2>
+                </div>
+
+                <a href="#personaliza" class="link-seccion">
+                    VER TODAS →
+                </a>
+
             </div>
 
-            <button id="botonPedido">
-                Pedir por WhatsApp
-            </button>
 
-        </div>
+            <div class="tablas">
 
-    </div>
 
-</section>
+                <!-- TABLA PEQUEÑA -->
+
+                <article class="tabla-card">
+
+                    <div class="producto-imagen">
+    <img src="img/tabla-pequena.jpg" alt="Tabla pequeña">
+</div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            PARA COMPARTIR
+                        </p>
+
+                        <h3>
+                            Tabla Pequeña
+                        </h3>
+
+                        <p>
+                            Ideal para 2 personas.
+                        </p>
+
+                        <div class="producto-footer">
+
+                            <strong>
+                                $350
+                            </strong>
+
+                            <button class="btn-producto">
+                                VER TABLA
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TABLA MEDIANA -->
+
+                <article class="tabla-card">
+
+                    <div class="producto-imagen">
+    <img src="img/tabla-mediana.jpg" alt="Tabla mediana">
+</div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            PARA COMPARTIR
+                        </p>
+
+                        <h3>
+                            Tabla Mediana
+                        </h3>
+
+                        <p>
+                            Ideal para 4 personas.
+                        </p>
+
+                        <div class="producto-footer">
+
+                            <strong>
+                                $550
+                            </strong>
+
+                            <button class="btn-producto">
+                                VER TABLA
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TABLA GRANDE -->
+
+                <article class="tabla-card">
+
+                    <div class="producto-imagen">
+    <img src="img/tabla-grande.jpg" alt="Tabla grande">
+</div>
+
+                    <div class="producto-info">
+
+                        <p class="producto-categoria">
+                            PARA COMPARTIR
+                        </p>
+
+                        <h3>
+                            Tabla Grande
+                        </h3>
+
+                        <p>
+                            Ideal para 6 personas.
+                        </p>
+
+                        <div class="producto-footer">
+
+                            <strong>
+                                $750
+                            </strong>
+
+                            <button class="btn-producto">
+                                VER TABLA
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PERSONALIZA
+        ========================== -->
+
+        <section class="personaliza" id="personaliza">
+
+            <div class="personaliza-intro">
+
+                <p class="seccion-etiqueta">
+                    TU TABLA, TUS REGLAS
+                </p>
+
+                <h2>
+                    Arma tu tabla
+                </h2>
+
+                <p>
+                    Elige el tamaño y después agrega tus
+                    quesos, carnes frías y complementos favoritos.
+                </p>
+
+            </div>
+
+
+            <div class="constructor">
+
+
+                <!-- TAMAÑO -->
+
+                <div class="constructor-seccion">
+
+                    <h3>
+                        01. Elige el tamaño
+                    </h3>
+
+                    <div class="opciones-tabla">
+
+                        <button
+                            class="opcion-tabla"
+                            data-precio="350"
+                            data-personas="2">
+
+                            <span>
+                                PEQUEÑA
+                            </span>
+
+                            <small>
+                                2 personas
+                            </small>
+
+                            <strong>
+                                $350
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            class="opcion-tabla"
+                            data-precio="550"
+                            data-personas="4">
+
+                            <span>
+                                MEDIANA
+                            </span>
+
+                            <small>
+                                4 personas
+                            </small>
+
+                            <strong>
+                                $550
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            class="opcion-tabla"
+                            data-precio="750"
+                            data-personas="6">
+
+                            <span>
+                                GRANDE
+                            </span>
+
+                            <small>
+                                6 personas
+                            </small>
+
+                            <strong>
+                                $750
+                            </strong>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUESOS -->
+
+                <div class="constructor-seccion">
+
+                    <h3>
+                        02. Elige tus quesos
+                    </h3>
+
+                    <div class="ingredientes">
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="100">
+
+                            <span>
+                                Manchego
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="120">
+
+                            <span>
+                                Brie
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="110">
+
+                            <span>
+                                Gouda
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARNES -->
+
+                <div class="constructor-seccion">
+
+                    <h3>
+                        03. Elige tus carnes frías
+                    </h3>
+
+                    <div class="ingredientes">
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="150">
+
+                            <span>
+                                Jamón serrano
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="130">
+
+                            <span>
+                                Salami
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="100">
+
+                            <span>
+                                Peperoni
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COMPLEMENTOS -->
+
+                <div class="constructor-seccion">
+
+                    <h3>
+                        04. Agrega complementos
+                    </h3>
+
+                    <div class="ingredientes">
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="35">
+
+                            <span>
+                                Uvas
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="30">
+
+                            <span>
+                                Nueces
+                            </span>
+
+                        </label>
+
+
+                        <label class="checkbox-opcion">
+
+                            <input
+                                type="checkbox"
+                                value="40">
+
+                            <span>
+                                Mermelada
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESUMEN -->
+
+                <div class="resumen">
+
+                    <div>
+
+                        <p>
+                            TOTAL
+                        </p>
+
+                        <strong id="total">
+                            $0
+                        </strong>
+
+                    </div>
+
+                    <button id="botonPedido">
+                        PEDIR POR WHATSAPP
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+        <section class="nosotros" id="nosotros">
+
+            <div class="nosotros-imagen">
+    <img src="img/nosotros.jpg" alt="Tabla de quesos">
+</div>
+
+            <div class="nosotros-contenido">
+
+                <p class="seccion-etiqueta">
+                    SOBRE MI TABLA
+                </p>
+
+                <h2>
+                    Momentos que saben mejor juntos.
+                </h2>
+
+                <p>
+                    Creemos que una buena tabla no se trata
+                    solamente de quesos y carnes frías.
+                </p>
+
+                <p>
+                    Se trata de compartir, descubrir sabores
+                    y disfrutar un momento especial con las
+                    personas que quieres.
+                </p>
+
+                <a href="#personaliza" class="link-seccion">
+                    CREA TU TABLA →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EVENTOS
+        ========================== -->
+
+        <section class="eventos">
+
+            <div>
+
+                <p class="seccion-etiqueta">
+                    EVENTOS
+                </p>
+
+                <h2>
+                    ¿Tienes algo que celebrar?
+                </h2>
+
+                <p>
+                    También creamos tablas para reuniones,
+                    cumpleaños, celebraciones y eventos especiales.
+                </p>
+
+                <a href="#contacto" class="btn-principal">
+                    COTIZA TU EVENTO
+                </a>
+
+            </div>
+
+        </section>
 
     </main>
 
 
-    <footer>
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-        <p>
-            © 2026 Mi Tabla
-        </p>
+    <footer id="contacto">
+
+        <div class="footer-contenido">
+
+            <div>
+
+                <h3>
+                    MI TABLA
+                </h3>
+
+                <p>
+                    Tablas hechas para compartir.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    EXPLORA
+                </h4>
+
+                <a href="#tablas">
+                    Tablas
+                </a>
+
+                <a href="#personaliza">
+                    Arma tu tabla
+                </a>
+
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    CONTACTO
+                </h4>
+
+                <a href="#">
+                    WhatsApp
+                </a>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Mi Tabla. Todos los derechos reservados.
+            </p>
+
+        </div>
 
     </footer>
 
+
+    <!-- JAVASCRIPT -->
 
     <script src="JS/app.js"></script>
 
 </body>
 
 </html>
+```
