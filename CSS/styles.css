@@ -1,7 +1,3 @@
-```css
-/* =========================
-   PALETA
-========================= */
 
 :root {
     --cafe-oscuro: #592202;
@@ -11,11 +7,6 @@
     --rojo: #BF2121;
     --blanco: #FFFFFF;
 }
-
-
-/* =========================
-   GENERAL
-========================= */
 
 * {
     margin: 0;
@@ -30,9 +21,7 @@ body {
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 .navbar {
     background: var(--cafe-oscuro);
@@ -66,9 +55,7 @@ body {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     min-height: 75vh;
@@ -100,9 +87,7 @@ body {
 }
 
 
-/* =========================
-   BOTONES
-========================= */
+/* BOTONES */
 
 button {
     border: none;
@@ -124,9 +109,7 @@ button {
 }
 
 
-/* =========================
-   CATÁLOGO
-========================= */
+/* CATÁLOGO */
 
 .catalogo {
     padding: 80px 8%;
@@ -173,9 +156,7 @@ button {
 }
 
 
-/* =========================
-   CONSTRUCTOR
-========================= */
+/* CONSTRUCTOR */
 
 .personaliza {
     padding: 80px 8%;
@@ -201,9 +182,7 @@ button {
 }
 
 
-/* =========================
-   TAMAÑOS
-========================= */
+/* TAMAÑOS */
 
 .opciones-tabla {
     display: grid;
@@ -232,9 +211,7 @@ button {
 }
 
 
-/* =========================
-   INGREDIENTES
-========================= */
+/* INGREDIENTES */
 
 .ingredientes {
     margin-top: 30px;
@@ -255,9 +232,7 @@ button {
 }
 
 
-/* =========================
-   RESUMEN
-========================= */
+/* RESUMEN */
 
 .resumen {
     margin-top: 40px;
@@ -290,9 +265,7 @@ button {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     background: var(--cafe-oscuro);
@@ -302,9 +275,7 @@ footer {
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
 
@@ -338,4 +309,3 @@ footer {
         padding: 25px;
     }
 }
-
