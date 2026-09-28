@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ef;
+    color: #332b26;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 70px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #332b26;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background-color: #e8dfd2;
+}
+
+.hero-contenido {
+    max-width: 700px;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* BOTONES */
+
+button {
+    margin-top: 20px;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #332b26;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    padding: 80px 7%;
+
+    text-align: center;
+}
+
+.seccion h2,
+.personaliza h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #6f665f;
+}
+
+
+/* TARJETAS */
+
+.tablas-container {
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.tabla-card {
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-imagen {
+    font-size: 50px;
+
+    padding: 30px;
+
+    background-color: #f2eee7;
+
+    border-radius: 12px;
+}
+
+.tabla-card h3 {
+    font-size: 24px;
+}
+
+.tabla-card strong {
+    display: block;
+
+    margin-top: 20px;
+
+    font-size: 24px;
+}
+
+
+/* PERSONALIZA */
+
+.personaliza {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background-color: #332b26;
+
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #241e1a;
+
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .tablas-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* CONSTRUCTOR */
+
+.constructor {
+    padding: 80px 7%;
+    background-color: #f8f5ef;
+}
+
+.constructor-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.constructor-header h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.constructor-header p {
+    line-height: 1.6;
+}
+
+
+/* CONTENIDO */
+
+.constructor-contenido {
+    max-width: 900px;
+    margin: auto;
+}
+
+.opciones {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.opciones h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+
+/* TAMAÑOS */
+
+.opciones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.opcion-tabla {
+    margin: 0;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    background-color: #f2eee7;
+    color: #332b26;
+
+    border: 2px solid transparent;
+    border-radius: 12px;
+}
+
+.opcion-tabla span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.opcion-tabla small {
+    font-size: 14px;
+}
+
+.opcion-tabla strong {
+    font-size: 20px;
+}
+
+
+/* OPCIÓN SELECCIONADA */
+
+.opcion-tabla.seleccionada {
+    border: 2px solid #332b26;
+}
+
+
+/* CHECKBOX */
+
+.checkbox-opcion {
+    display: flex;
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+
+    cursor: pointer;
+}
+
+.checkbox-opcion input {
+    width: 18px;
+    height: 18px;
+
+    margin-right: 15px;
+}
+
+.checkbox-opcion span {
+    flex: 1;
+}
+
+.checkbox-opcion strong {
+    font-size: 15px;
+}
+
+
+/* RESUMEN */
+
+.resumen {
+    position: sticky;
+    bottom: 15px;
+
+    padding: 30px;
+
+    background-color: #332b26;
+    color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.resumen h3 {
+    font-size: 24px;
+}
+
+#total {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .constructor {
+        padding: 60px 20px;
+    }
+
+    .opciones-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
