@@ -1,5 +1,49 @@
 
+// ==========================================
+// MENÚ MÓVIL
+// ==========================================
 
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navMenu =
+    document.getElementById("navMenu");
+
+
+if (menuToggle && navMenu) {
+
+    menuToggle.addEventListener(
+        "click",
+        function () {
+
+            navMenu.classList.toggle(
+                "menu-abierto"
+            );
+
+        }
+    );
+
+
+    const enlaces =
+        navMenu.querySelectorAll("a");
+
+
+    enlaces.forEach(function (enlace) {
+
+        enlace.addEventListener(
+            "click",
+            function () {
+
+                navMenu.classList.remove(
+                    "menu-abierto"
+                );
+
+            }
+        );
+
+    });
+
+}
 const tablas = {
 
     pequena: {
