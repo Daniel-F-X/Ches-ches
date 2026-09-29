@@ -773,3 +773,275 @@ footer {
     object-fit: cover;
     display: block;
 }
+/* ==========================================
+   MENÚ MÓVIL
+========================================== */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--cafe);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   TARJETAS CLICABLES
+========================================== */
+
+.tabla-card {
+    display: block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.ver-producto {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tabla-card:hover .ver-producto {
+    color: var(--rojo);
+}
+
+
+/* ==========================================
+   PÁGINA DE PRODUCTO
+========================================== */
+
+.producto-detalle {
+    min-height: 85vh;
+    padding: 80px 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    background: var(--crema);
+}
+
+.producto-detalle-imagen {
+    height: 650px;
+    overflow: hidden;
+}
+
+.producto-detalle-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto-detalle-info {
+    max-width: 550px;
+}
+
+.producto-detalle-info h1 {
+    margin: 20px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(45px, 5vw, 70px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.producto-descripcion {
+    line-height: 1.7;
+    color: rgba(89, 34, 2, 0.75);
+    margin-bottom: 25px;
+}
+
+.producto-precio {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================
+   DETALLES
+========================================== */
+
+.detalle-seccion {
+    padding: 25px 0;
+    border-top: 1px solid rgba(89, 34, 2, 0.2);
+}
+
+.detalle-seccion h3 {
+    margin-bottom: 18px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.detalle-seccion ul {
+    list-style: none;
+}
+
+.detalle-seccion li {
+    margin-bottom: 8px;
+}
+
+
+/* ==========================================
+   EXTRAS
+========================================== */
+
+.extras {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.extra-opcion {
+    display: grid;
+    grid-template-columns: 20px 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    background: var(--blanco);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.extra-opcion:hover {
+    background: #e9cca0;
+}
+
+.extra-opcion input {
+    accent-color: var(--rojo);
+}
+
+.extra-opcion strong {
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   TOTAL PRODUCTO
+========================================== */
+
+.producto-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 2px solid var(--cafe);
+}
+
+.producto-total strong {
+    font-size: 30px;
+}
+
+
+/* ==========================================
+   BOTÓN CARRITO
+========================================== */
+
+.btn-agregar {
+    width: 100%;
+    padding: 18px;
+    background: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-agregar:hover {
+    background: var(--cafe);
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        position: relative;
+        padding: 18px 5%;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    .carrito {
+        order: 3;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--cafe);
+        padding: 20px 5%;
+        z-index: 999;
+    }
+
+    .nav-menu.menu-abierto {
+        display: block;
+        animation: menuEntrada 0.25s ease;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 17px 5px;
+        color: var(--blanco);
+    }
+
+    .nav-links a:hover {
+        color: var(--terracota);
+    }
+
+    .producto-detalle {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 50px 5%;
+    }
+
+    .producto-detalle-imagen {
+        height: 400px;
+    }
+
+}
+
+
+@keyframes menuEntrada {
+
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
